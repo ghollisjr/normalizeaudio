@@ -4,7 +4,7 @@ if [[ $# -ne 2 ]] ; then
     echo ""
     echo "normalizeaudio.sh normalizes audio based on EBU R128 standard and commonly recommended parameters."
     echo ""
-    echo "cleanupaudio.sh works for both audio and audio-video files."
+    echo "normalizeaudio.sh works for both audio and audio-video files."
     exit 1
 fi;
 

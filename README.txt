@@ -1,4 +1,4 @@
-normalizeaudio.sh is a Bash script to normalize audio using standard
+normalizeaudio.sh is a Bash script to normalize audio using EBU R128
 parameters supplied to FFmpeg.
 
 It was something I found necessary often enough that I got tired of
