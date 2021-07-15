@@ -11,5 +11,9 @@ fi;
 infile="$1"
 outfile="$2"
 
+#If you wanted to convert mono or stereo into 2 identical channels
+#(useful for guaranteed one-ear complete signal), you could do this:
+#
 #ffmpeg -i "$infile" -af "pan=stereo|c0<c0+c1|c1<c0+c1" -af "loudnorm=I=-16:LRA=11:TP=-1.5" -c:v copy "$outfile"
+
 ffmpeg -i "$infile" -af "loudnorm=I=-16:LRA=11:TP=-1.5" -c:v copy "$outfile"
